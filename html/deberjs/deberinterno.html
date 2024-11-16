@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cambiaresiloLabels(idelementos, color) {
+            const label1 = idelementos[0];
+            const label2 = idelementos[1];
+            document.getElementById(label1).style.color = color;
+            document.getElementById(label1).style.fontFamily = 'Arial, Helvetica, sans-serif';
+            document.getElementById(label2).style.color = color;
+            document.getElementById(label2).style.fontFamily = 'Arial, Helvetica, sans-serif';
+        }
+        function cambiarColorInputs(idelementos, color) {
+            const input1 = idelementos[0];
+            const input2 = idelementos[1];
+            document.getElementById(input1).style.backgroundColor = color;
+            document.getElementById(input2).style.backgroundColor = color;
+        }
+        function cambiarColorBody(color) {
+            document.body.style.backgroundColor = color;
+        }
+        function cambiarEstiloH1(color) {
+            document.getElementById('h1').style.color = color;
+            document.getElementById('h1').style.fontSize = '30px';
+            document.getElementById('h1').style.fontFamily = 'Verdana, Geneva, Tahoma, sans-serif';
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <nav></nav>
+    <section>
+        <h1 id="h1">Calculadora</h1>
+        <label id="label1" for="num1">N&#250;mero 1</label>
+        <input type="number" id="num1" placeholder="Ingrese el numero 1">
+        <label id="label2" for="num2">N&#250;mero 2</label>
+        <input type="number" id="num2" placeholder="Ingrese el numero 2">
+        <br><br>
+        <button onclick="cambiaresiloLabels(['label1','label2'],'brown')">Estilo
+            labels</button>
+        <button onclick="cambiarColorInputs(['num1','num2'],'green')">Color
+            inputs</button>
+        <button onclick="cambiarColorBody('lightblue')">Color background</button>
+        <button onclick="cambiarEstiloH1('red')">Estilo
+            h1</button>
+    </section>
+    <footer></footer>
+
+</body>
+
+</html>
