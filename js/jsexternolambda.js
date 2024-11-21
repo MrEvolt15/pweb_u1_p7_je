@@ -178,8 +178,8 @@ const conceptojs = () => {
     console.log(c3);
 
     const [, m2, , , m5] = ["enero", "febrero", "marzo", "abril", "mayo"];
-    console.log(m1);
-    console.log(m4);
+    console.log(m2);
+    console.log(m5);
 
     //Desestructuracion de objetos
     console.log("Desestructuracion de objetos");
