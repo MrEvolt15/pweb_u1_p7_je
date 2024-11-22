@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/estilos.css">
+    <script  src="../js/calculadora.js"></script>
 </head>
 
 <body>
@@ -18,27 +19,27 @@
     <section>
         <div class="container">
             <div class="calculadora">
-                <div class="display">
+                <div id="id-display" class="display">
                     1+2
                 </div>
-                <button id="cbutton">C</button>
+                <button class="column-2" onclick="limpiarDisplay()">C</button>
                 <button>&larr;</button>
                 <button>%</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
+                <button onclick="setearValorConcatenado(document.getElementById('button7').innerText);ponerValor()" id="button7">7</button>
+                <button onclick="setearValorConcatenado(document.getElementById('button8').innerText);ponerValor()" id="button8">8</button>
+                <button onclick="setearValorConcatenado(document.getElementById('button9').innerText);ponerValor()" id="button9">9</button>
                 <button>x</button>
-                <button>4</button>
-                <button id="num5">5</button>
-                <button>6</button>
+                <button onclick="setearValorConcatenado(document.getElementById('button4').innerText);ponerValor()" id="button4">4</button>
+                <button onclick="setearValorConcatenado(document.getElementById('button5').innerText);ponerValor()" id="button5">5</button>
+                <button onclick="setearValorConcatenado(document.getElementById('button6').innerText);ponerValor()" id="button6">6</button>
                 <button>-</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
-                <button id="zerobutton">0</button>
+                <button onclick="setearValorConcatenado(document.getElementById('button1').innerText);ponerValor()" id="button1">1</button>
+                <button onclick="setearValorConcatenado(document.getElementById('button2').innerText);ponerValor()" id="button2">2</button>
+                <button onclick="setearValorConcatenado(document.getElementById('button3').innerText);ponerValor()" id="button3">3</button>
+                <button onclick="sumar()">+</button>
+                <button class="column-2">0</button>
                 <button>.</button>
-                <button>=</button>
+                <button onclick="calcular()">=</button>
             </div>
             
         </div>
