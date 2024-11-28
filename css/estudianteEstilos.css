@@ -2,12 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #ffebcd; /* Blanched Almond */
 }
 
 body {
-    background: #ffefd5; /* Papaya Whip */
+    background: #ffefd5;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -18,36 +16,52 @@ p:before {
     display: block;
     margin: 5px 0;
     font-size: 16px;
-    color: #8b0000; /* Dark Red */
+    color: #5a5a5a; 
 }
 
 input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ff69b4; /* Hot Pink */
+    border: 1px solid #ff69b4; 
     border-radius: 5px;
-    background: #fff0f5; /* Lavender Blush */
+    background: #fff0f5;
     margin-bottom: 10px;
 }
 
 input:focus {
     outline: none;
-    border-color: #ff1493; /* Deep Pink */
+    border-color: #ff1493;
 }
 
 h2 {
     margin: 20px 0;
     font-size: 24px;
-    color: #4b0082; /* Indigo */
-    border-bottom: 2px solid #dda0dd; /* Plum */
+    color: #4b0082; 
+    border-bottom: 2px solid #dda0dd;
     padding-bottom: 10px;
 }
 
 form {
-    width: 100%;
-    max-width: 400px;
-    background: #e6e6fa; /* Lavender */
+    width: 300px;
+    height: 515px;
+    background: #e6e6fa; 
     border-radius: 10px;
-    padding: 20px;
+    padding: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    width: 90px;
+    height: 35px;
+    border-radius: 10px;
+    background: #eddae4;
+    color: #5a5a5a;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #ff69b4;
+}
+.copia-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
